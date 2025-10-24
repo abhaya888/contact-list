@@ -51,14 +51,14 @@ npm install
 
 3. Run the development server:
 
-
-npm start     # If using Create React App
+```
+npm start    
 ```
 
 4. Open your browser and visit:
 
-
-http://localhost:3000   # CRA default port
+```
+http://localhost:3000  
 ```
 
 ---
