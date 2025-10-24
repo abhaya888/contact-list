@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Contact Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple **Contact Manager** web application built using **React** and **CSS**.  
+This app allows you to **view, search, add, edit, and delete contacts** in a user-friendly interface.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+[Deployed App on Vercel](https://contact-list-tau-ivory.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚡ Features
 
-### `npm test`
+- View a list of contacts with **name, email, phone, and company**.  
+- **Search contacts** by name, email, or company in real-time.  
+- **Add new contacts** via a modal form.  
+- **Edit existing contacts** using a modal form.  
+- **Delete contacts** with a confirmation prompt.  
+- Responsive layout using **CSS styling**.  
+- User-friendly interface with **Lucide React icons**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> **Note:** Changes (add/edit/delete) are **not persistent** after page refresh as the app uses in-memory state to mimic API interaction.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Technologies & Libraries
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React** – Frontend framework  
+- **CSS** – Styling for layout and responsiveness  
+- **Lucide React** – Icons for buttons and visual elements  
+- **Vite** – Development and build tooling  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 💻 Getting Started (Local Setup)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/abhaya888/contact-list
+cd contact-list
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+3. Run the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start     # If using Create React App
+```
 
-### Code Splitting
+4. Open your browser and visit:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+http://localhost:3000   # CRA default port
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🎨 Design & Implementation Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Component Structure:** Currently, all logic is in `App.js`. Could be refactored into subcomponents (`ContactCard`, `Modal`, `SearchBar`) for cleaner code.  
+- **Form Validation:** Simple validation for name, email, and phone fields.  
+- **UX Considerations:**  
+  - Empty state messages guide users to add their first contact.  
+  - Loading spinner simulates API fetch delay.  
+- **Assumptions:**  
+  - Persistent storage is not required; data resets on page reload.  
+  - Only basic form validation is implemented.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📌 How I Used the Libraries
 
-### Deployment
+- **CSS:** For styling and responsive layout.  
+- **Lucide React:** Modern, lightweight icon library for buttons and inputs.  
+- **React Hooks (`useState`, `useEffect`, `useMemo`)**: For state management and filtering/search optimization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## ✅ Submission Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The app is deployed and publicly accessible.  
+- All core technical requirements of the assignment are met.  
+- Enhancements like persistent storage or component refactoring can be added later.
