@@ -30,7 +30,6 @@ This app allows you to **view, search, add, edit, and delete contacts** in a use
 - **React** – Frontend framework  
 - **CSS** – Styling for layout and responsiveness  
 - **Lucide React** – Icons for buttons and visual elements  
-- **Vite** – Development and build tooling  
 
 ---
 
