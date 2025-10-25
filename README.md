@@ -64,7 +64,6 @@ http://localhost:3000
 
 ## 🎨 Design & Implementation Notes
 
-- **Component Structure:** Currently, all logic is in `App.js`. Could be refactored into subcomponents (`ContactCard`, `Modal`, `SearchBar`) for cleaner code.  
 - **Form Validation:** Simple validation for name, email, and phone fields.  
 - **UX Considerations:**  
   - Empty state messages guide users to add their first contact.  
